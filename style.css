@@ -203,7 +203,7 @@ table tbody tr {
 }
 
 table td {
-    background: #fffffe;
+    background: #bbbbb2;
     padding: 1rem 1rem;
     font-size: 1.25rem;
 }
@@ -217,10 +217,15 @@ td.expense {
     color: #e92929;
 }
 
-td.date{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.remove p::after{
+    content: "";
+    display: block;
+    width: 25px;
+    height: .1rem;
+    background:#c20303;
+    margin: 4px auto;
+    border-radius: 10px;
+    border: rgb(243, 78, 78) 2px solid;
 }
 
 /*######## MODAL ##################*/
@@ -326,11 +331,11 @@ footer p{
     .header h1::after,
     .header h1::before{
         content: "";
-	display: block;
-	width: 240px;
-	height: 3px;
-	background:#52a02e;
-	margin: 4px auto;
+        display: block;
+        width: 240px;
+        height: 3px;
+        background:#52a02e;
+        margin: 4px auto;
     }
     .header a{
         margin-bottom: -3rem;
@@ -357,15 +362,15 @@ footer p{
 
     td.income {
         font-size: 1rem;
-        padding-right: .1rem;
+        padding: .4rem;
     }
     td.expense {
         font-size: 1rem;
-        padding-right: .1rem;
+        padding: .4rem;
     }
     td.date{
         font-size: 1rem;
-        padding-right: .5rem;
+        padding: .4rem;
     }
 
     .headDescription{

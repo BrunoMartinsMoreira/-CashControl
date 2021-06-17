@@ -75,11 +75,10 @@ const DOM = {
         const amount = Utils.formatCurrency(transaction.amount)
 
         const html = `
-        <td class="description">${transaction.description}</td>
-        <td class="${CSSclass}">${amount}</td>
-        <td class="date">${transaction.date}
-            <img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="Remover transação">
-        </td>
+            <td class="description">${transaction.description}</td>
+            <td class="${CSSclass}">${amount}</td>
+            <td class="date">${transaction.date}</td>
+            <td class="remove"><p onclick="Transaction.remove(${index})"></p></td>
        
         `
 
