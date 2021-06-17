@@ -377,4 +377,13 @@ footer p{
         font-size: .95rem;
         padding: .5rem;
     }
+    .remove p::after{
+        content: "";
+        display: block;
+        width: 15px;
+        height: 3px;
+        background:#c20303;
+        margin: auto;
+        border-radius: 10px;
+    }
 }
