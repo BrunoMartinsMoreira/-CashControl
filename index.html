@@ -12,6 +12,7 @@
 <body>
     <header class="header container">
         <h1><span>$</span> Cash Control <span>$</span></h1>
+        <p class="legend">Clique para adicionar uma transação</p>
         <a href="#" 
                onclick="modal.open()"
                class="new-buttom">Nova transação</a>
@@ -74,7 +75,8 @@
                             type="text" 
                             id="description"
                             name="description"
-                            placeholder="Descrição"
+                            placeholder="Descrição da transação, Ex:Salário"
+                            required
                          >
                     </div>    
                         <div class="input-group">
@@ -88,7 +90,8 @@
                                 step="0.01"
                                 id="amount"
                                 name="amount"
-                                placeholder="0,00"
+                                placeholder="Ex: -100,00 para saidas ou 100,00 para entradas"
+                                required
                             >
                              <small class="help">Use o sinal - (negativo) para despesas 
                                  e , (virgula) para casas decimais.
@@ -104,6 +107,7 @@
                                 type="date" 
                                 id="date"
                                 name="date"
+                                required
                             >
                         </div>  
                         <div class="input-group actions">

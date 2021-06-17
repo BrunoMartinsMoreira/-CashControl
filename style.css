@@ -8,7 +8,8 @@
 }
 
 body {
-    background-color:#20203b;
+    background:linear-gradient(90deg, #536976 0%,#292e49 100% );
+   /* background-color:#20203b;*/
     font-family: 'poppins', sans-serif;
 }
 .ScrenReaderOnly{
@@ -24,8 +25,8 @@ body {
 }
 
 .container {
-    width: min(80vw, 1000px);
-    margin: auto;
+    width: min(85vw, 1000px);
+    margin: 0 auto;
 }
 
 .header{
@@ -40,6 +41,11 @@ body {
     color: #49aa26;
 }
 
+.legend{
+    opacity: 0;
+    display: none;
+    visibility:hidden;
+}
 /*########## buttons & links ####*/
 button {
     width: 100%;
@@ -65,8 +71,8 @@ a.buttom:hover{
 .new-buttom{
    font-size: 1rem;
     padding: .5rem;
-    border: #12a454 .1rem solid;
-    color: #12a454;
+    border: #3dd705 .1rem solid;
+    color: #3dd705;
     text-decoration: none;
     border-radius: .35rem;
     text-transform: uppercase;
@@ -128,9 +134,7 @@ header {
 
 /*########## CARDS ##############*/
 .card{
-
-    background:linear-gradient(90deg, #faf4ee 0%,#fadcc3 100% );
-    /*background-color: #fff;*/
+    background-color: #fff;
     padding: 1.5rem 3rem;
     border-radius: 0.26rem;
     margin-bottom: 2rem;
@@ -188,7 +192,7 @@ table th {
 
     background: #636363;
     font-weight: normal;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     text-align: left;
     font-size: 1.1rem;
     color: #ffffff;
@@ -200,7 +204,7 @@ table tbody tr {
 
 table td {
     background: #fffffe;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-size: 1.25rem;
 }
 td.description {
@@ -249,7 +253,7 @@ td.expense {
 }
 
 input {
-    border: none;
+    border: #e92929 2px solid;
     border-radius: 0.3rem;
     padding: 0.75rem;
     width: 100%;
@@ -297,20 +301,64 @@ footer p{
     .card.total:hover{
         box-shadow: 0 30px 60px  rgb(34, 165, 165);
     }
+}
+@media (max-width: 600px){
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100vw;
+    }
+    .header{
+        flex-direction: column;
+    }
+    .header h1{
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .header h1::after,
+    .header h1::before{
+        content: "";
+	display: block;
+	width: 240px;
+	height: 3px;
+	background:#52a02e;
+	margin: 4px auto;
+    }
+    .header a{
+        margin-bottom: -3rem;
+    }
+    .container{
+        width: 90vw;
+    }
+    .legend{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: .8rem;
+        font-size: .9rem;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #fafafa;
+        text-transform: uppercase;
+    }
+        
 
-   @media (max-width: 400px){
-        .header{
-            flex-direction: column;
-        }
-        .header h1{
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        .header a{
-            margin-bottom: -3rem;
-        }
-        .container{
-            width: 90vw;
-        }
+   td.description{
+    font-size: .9rem;
+    padding-right: .1rem;
+    }
+
+    td.income {
+        font-size: 1rem;
+        padding-right: .1rem;
+    }
+    td.expense {
+        font-size: 1rem;
+        padding-right: .1rem;
+    }
+    td.date{
+        font-size: 0.9rem;
+        padding-right: .1rem;
     }
 }
