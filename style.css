@@ -217,6 +217,12 @@ td.expense {
     color: #e92929;
 }
 
+td.date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /*######## MODAL ##################*/
 .modal-overlay{
     width: 100%;
@@ -358,7 +364,12 @@ footer p{
         padding-right: .1rem;
     }
     td.date{
-        font-size: 0.9rem;
-        padding-right: .1rem;
+        font-size: 1rem;
+        padding-right: .5rem;
+    }
+
+    .headDescription{
+        font-size: .95rem;
+        padding: .5rem;
     }
 }
