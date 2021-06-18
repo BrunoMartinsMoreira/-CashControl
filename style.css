@@ -140,6 +140,7 @@ header {
     margin-bottom: 2rem;
     color: var(--globalColor);
     height: 10rem;
+    box-shadow: -10px 10px 5px #000000;
 }
 
 .card h3 {
@@ -166,7 +167,6 @@ header {
    /* background-color: #49aa26;*/
     color: #fff;
 }
-
 
 /*######### TABLE ################*/
 #transactions {
@@ -306,12 +306,10 @@ footer p{
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
-    .card:hover{
-        box-shadow: 0 10px 60px  #a9bee4;
-    }
-    .card.total:hover{
-        box-shadow: 0 30px 60px  rgb(34, 165, 165);
-    }
+    
+      /*  box-shadow: 0 10px 60px  #a9bee4;*/
+    
+      /*  box-shadow: 0 30px 60px  rgb(34, 165, 165);*/
 }
 @media (max-width: 600px){
     body{
