@@ -107,6 +107,10 @@ h2 {
     font-weight: normal;
    /* font-size: 3rem;*/
 }
+.buttomContainer{
+   opacity: 0;
+    visibility: hidden;
+}
 
 
 /*######### HEADER #############*/
@@ -383,5 +387,19 @@ footer p{
         background:#c20303;
         margin: auto;
         border-radius: 10px;
+    }
+    .buttomContainer{
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .new-buttom, .buttom-form{
+        margin-bottom: 1rem;
+        box-shadow: -2px 2px 5px black;
+    }
+    .new-buttom:hover{
+        box-shadow: none;
     }
 }
