@@ -142,7 +142,6 @@ header {
     padding: 1.5rem 3rem;
     border-radius: 0.26rem;
     margin-bottom: 2rem;
-    color: var(--globalColor);
     height: 10rem;
     box-shadow: -10px 10px 5px #000000;
 }
